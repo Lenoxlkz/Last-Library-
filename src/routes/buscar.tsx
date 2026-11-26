@@ -1,6 +1,5 @@
 import { PaperSlip } from "@/components/library/paper-slip";
 import { SearchForm } from "@/components/library/search-form";
-import { Shell } from "@/components/library/shell";
 import { searchLibrary } from "@/lib/library/papers.functions";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -21,11 +20,11 @@ function SearchPage() {
   const result = Route.useLoaderData();
 
   return (
-    <Shell>
+    <>
       {!q ? (
-        <div className="max-w-xl">
+        <div className="focus-pool max-w-xl">
           <SearchForm large />
-          <p className="mt-12 font-serif text-2xl leading-snug text-ink">
+          <p className="mt-8 font-serif text-2xl leading-snug text-ink">
             Escribe algo. Aunque sea torpe. La biblioteca no pide que sepas el título.
           </p>
         </div>
@@ -44,11 +43,11 @@ function SearchPage() {
                 : "No había un papel con esa forma. Esto estaba cerca, o quizá no"
             }
           />
-          <div className="mt-16 max-w-xl border-t border-rule pt-8">
+          <div className="mt-12 max-w-xl">
             <SearchForm initial={q} />
           </div>
         </>
       ) : null}
-    </Shell>
+    </>
   );
 }

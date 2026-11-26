@@ -1,0 +1,1 @@
+import{s as e}from"./link-CbLTYCOY.js";import{t}from"./index-B7oOzxoF.js";import{t as n}from"./paper-slip-CqZIArl0.js";var r=e();function i(){let{paper:e,marginal:i,nearby:a}=t.useLoaderData(),{nuevo:o}=t.useSearch();return(0,r.jsx)(n,{paper:e,marginal:i,nearby:a,kicker:o?`Acaba de quedar en el estante`:`Ficha de lectura`,fresh:o,offerLeave:!o})}export{i as component};

@@ -1,7 +1,7 @@
 import { o as __toESM } from "../_runtime.mjs";
-import { t as SHELVES } from "./types-Cv8bB22i.mjs";
 import { C as require_jsx_runtime, Z as require_react, b as Link, x as useNavigate } from "../_libs/@tanstack/react-router+[...].mjs";
-import { d as leavePaper } from "./router-D7cGN0Ob.mjs";
+import { t as SHELVES } from "./types-Cv8bB22i.mjs";
+import { u as leavePaper } from "./router-M8lgtIMg.mjs";
 import { r as moderate } from "./text-C2KgKLTX.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/leave-form-CvtJq7d4.js
 var import_react = /* @__PURE__ */ __toESM(require_react());

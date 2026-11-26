@@ -9,7 +9,7 @@ import {
   searchPapers,
   type SearchResult,
 } from "@/lib/library/search";
-import { moderate } from "@/lib/library/text";
+import { moderate, snippet } from "@/lib/library/text";
 import { isShelf, isThread, SHELVES, type Paper, type Shelf } from "@/lib/library/types";
 
 type PaperRow = {
@@ -82,6 +82,17 @@ export async function homeStats() {
       ...shelf,
       count: papers.filter((paper) => paper.shelf === shelf.id).length,
     })),
+    slips: SHELVES.flatMap((shelf) =>
+      papers
+        .filter((paper) => paper.shelf === shelf.id)
+        .slice(0, 2)
+        .map((paper) => ({
+          id: paper.id,
+          shelf: shelf.id,
+          name: shelf.name,
+          line: snippet(paper.body, 110),
+        })),
+    ),
   };
 }
 

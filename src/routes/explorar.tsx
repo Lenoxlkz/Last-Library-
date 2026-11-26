@@ -1,5 +1,4 @@
 import { PaperSlip } from "@/components/library/paper-slip";
-import { Shell } from "@/components/library/shell";
 import { drawLibraryPaper } from "@/lib/library/papers.functions";
 import { randomSeed } from "@/lib/library/text";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
@@ -27,27 +26,23 @@ function ExplorePage() {
   }, [s, navigate]);
 
   return (
-    <Shell>
+    <>
       {paper ? (
         <>
-          <PaperSlip
-            paper={paper}
-            marginal={null}
-            nearby={[]}
-            kicker="Abierto al azar"
-            offerLeave
-          />
+          <PaperSlip paper={paper} marginal={null} nearby={[]} kicker="Abierto al azar" offerLeave />
           <button
             type="button"
             onClick={() => void navigate({ to: "/explorar", search: { s: randomSeed() } })}
-            className="mt-10 min-h-11 text-sm text-faint underline decoration-rule underline-offset-4 hover:text-ink"
+            className="mt-8 min-h-11 text-sm text-faint underline decoration-rule underline-offset-4 hover:text-ink"
           >
             Abrir otro cajón
           </button>
         </>
       ) : (
-        <p className="font-serif text-3xl leading-snug text-ink">Un cajón cerrado. Un momento.</p>
+        <p className="focus-pool max-w-xl font-serif text-3xl leading-snug text-ink">
+          Un cajón cerrado. Un momento.
+        </p>
       )}
-    </Shell>
+    </>
   );
 }

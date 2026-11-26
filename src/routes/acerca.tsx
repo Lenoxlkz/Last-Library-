@@ -1,4 +1,3 @@
-import { Shell } from "@/components/library/shell";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/acerca")({
@@ -8,9 +7,9 @@ export const Route = createFileRoute("/acerca")({
 
 function AboutPage() {
   return (
-    <Shell>
+    <div className="focus-pool max-w-xl">
       <p className="text-xs tracking-widest text-faint uppercase">Colofón</p>
-      <h1 className="mt-4 max-w-xl font-serif text-5xl leading-tight font-medium text-balance text-ink">
+      <h1 className="mt-4 font-serif text-5xl leading-tight font-medium text-balance text-ink">
         Cómo se habita
       </h1>
       <div className="mt-8 max-w-xl space-y-6 font-serif text-xl leading-relaxed text-pretty text-ink">
@@ -36,6 +35,6 @@ function AboutPage() {
           Dejar un papel
         </Link>
       </p>
-    </Shell>
+    </div>
   );
 }

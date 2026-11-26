@@ -25,7 +25,7 @@ export function SearchForm({ initial = "", large = false }: { initial?: string; 
           maxLength={280}
           autoComplete="off"
           placeholder="Una pregunta, una inquietud, una idea extraña"
-          className="min-h-12 w-full border-b border-ink bg-transparent font-serif text-lg text-ink outline-none placeholder:text-faint"
+          className="min-h-12 w-full border-b border-rule bg-transparent font-serif text-lg text-ink outline-none placeholder:text-faint focus:border-wax"
         />
       </label>
       <button

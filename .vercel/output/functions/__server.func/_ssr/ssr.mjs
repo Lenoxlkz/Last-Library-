@@ -118,7 +118,7 @@ var HEADERS = { TSS_SHELL: "X-TSS_SHELL" };
 * the dev styles URL for route-scoped CSS collection.
 */
 async function getStartManifest(matchedRoutes) {
-	const { tsrStartManifest } = await import("../_tanstack-start-manifest_v-D2m9S1vq.mjs");
+	const { tsrStartManifest } = await import("../_tanstack-start-manifest_v-CaX_DZw-.mjs");
 	const startManifest = tsrStartManifest();
 	let routes = startManifest.routes;
 	routes[rootRouteId];
@@ -140,31 +140,31 @@ async function getStartManifest(matchedRoutes) {
 var manifest = {
 	"206b51427f1d26db22903df4b50ea3fef73b6e908efc11e7ac702ff1078d3740": {
 		functionName: "getHomeStats_createServerFn_handler",
-		importer: () => import("./papers.functions-BNtbvLLM.mjs")
+		importer: () => import("./papers.functions-KG20v1ln.mjs")
 	},
 	"3712a134dc0a77a87f711ae5feb090724c45432aaa731f9d48ba2f7ae54454f8": {
 		functionName: "getThread_createServerFn_handler",
-		importer: () => import("./papers.functions-BNtbvLLM.mjs")
+		importer: () => import("./papers.functions-KG20v1ln.mjs")
 	},
 	"5945d7162c4f508b0ff897dcc1ad27f142a6b821bb6d17fd0d67760a67dc29bf": {
 		functionName: "leavePaper_createServerFn_handler",
-		importer: () => import("./papers.functions-BNtbvLLM.mjs")
+		importer: () => import("./papers.functions-KG20v1ln.mjs")
 	},
 	"68ac000ae5e608a8563e4ec4534be174c670f0d26604f2c37c41e4e318360832": {
 		functionName: "getPaperPage_createServerFn_handler",
-		importer: () => import("./papers.functions-BNtbvLLM.mjs")
+		importer: () => import("./papers.functions-KG20v1ln.mjs")
 	},
 	"a9375e31726514c501f2b98043dda7b6cb1b6565b0711e5c021ba4975cda556d": {
 		functionName: "drawLibraryPaper_createServerFn_handler",
-		importer: () => import("./papers.functions-BNtbvLLM.mjs")
+		importer: () => import("./papers.functions-KG20v1ln.mjs")
 	},
 	"d7d95cb39d946e604d1404f45a1a372b686632546d9566c29a55d939d4ed8f50": {
 		functionName: "searchLibrary_createServerFn_handler",
-		importer: () => import("./papers.functions-BNtbvLLM.mjs")
+		importer: () => import("./papers.functions-KG20v1ln.mjs")
 	},
 	"f2adcb7f283f8386251c388e13f7c19eefc0fb3651283d459b56dad947dcd425": {
 		functionName: "getShelfPapers_createServerFn_handler",
-		importer: () => import("./papers.functions-BNtbvLLM.mjs")
+		importer: () => import("./papers.functions-KG20v1ln.mjs")
 	}
 };
 async function getServerFnById(id, access) {
@@ -1569,7 +1569,7 @@ var getBaseManifest = getProdBaseManifest;
 var createEarlyHintsForRequest = createEarlyHintsCollector;
 async function loadEntries() {
 	const [routerEntry, startEntry, pluginAdapters] = await Promise.all([
-		import("./router-D7cGN0Ob.mjs").then((n) => n.t),
+		import("./router-M8lgtIMg.mjs").then((n) => n.t),
 		import("./start-5Z2QO8AU.mjs"),
 		import("./empty-plugin-adapters-D9UWiqvJ.mjs")
 	]);

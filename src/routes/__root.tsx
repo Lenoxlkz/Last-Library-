@@ -1,3 +1,4 @@
+import { Shell } from "@/components/library/shell";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { AuthProvider } from "@/lib/auth/provider";
 import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
@@ -14,7 +15,7 @@ export const Route = createRootRoute({
         content:
           "Una biblioteca pública de mensajes anónimos. Entra, lee lo que otros dejaron y, si quieres, deja algo para quien venga después.",
       },
-      { name: "theme-color", content: "#F3EDE3" },
+      { name: "theme-color", content: "#12100E" },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
@@ -37,7 +38,9 @@ export const Route = createRootRoute({
       <body>
         <PreviewHostBridge />
         <AuthProvider>
-          <Outlet />
+          <Shell>
+            <Outlet />
+          </Shell>
         </AuthProvider>
         <Scripts />
       </body>

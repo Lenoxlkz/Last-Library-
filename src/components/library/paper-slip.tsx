@@ -45,7 +45,7 @@ export function PaperSlip({
   const [openLeave, setOpenLeave] = useState(false);
 
   return (
-    <article className="rise">
+    <article className="focus-pool rise max-w-xl">
       <p className="text-xs tracking-widest text-faint uppercase">{kicker}</p>
       {question ? (
         <p className="mt-4 max-w-xl font-serif text-lg leading-relaxed text-pretty text-faint italic">
