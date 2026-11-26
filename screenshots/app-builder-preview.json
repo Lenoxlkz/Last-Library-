@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "La última biblioteca",
+      "hasCanvas": false,
+      "bodyTextLen": 848,
+      "bodyTextHash": "53e8cdcb8c4e68d57be2a070ddd10e96f29918a6d40446ad758e472acf2731f4",
+      "bodyTextPrefix": "La última biblioteca Entrada Estantes Explorar Dejar algo UNA BI",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "La última biblioteca",
+      "hasCanvas": false,
+      "bodyTextLen": 848,
+      "bodyTextHash": "53e8cdcb8c4e68d57be2a070ddd10e96f29918a6d40446ad758e472acf2731f4",
+      "bodyTextPrefix": "La última biblioteca Entrada Estantes Explorar Dejar algo UNA BI",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
